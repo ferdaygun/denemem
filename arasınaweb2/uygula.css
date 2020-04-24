@@ -1,0 +1,77 @@
+body {background-color: darkkhaki;}
+.menu ul {position: fixed;}
+.menu ul {list-style: none;;} 
+.menu ul li {float: left;}
+.menu ul li a {padding: 30px 80px;
+text-decoration: none;
+display: block;
+background-color:#323331 ;
+color: #fff;
+font-family: 14px verdana,arial;
+}
+.menu ul li a:hover {background: yellow;
+color: #000;
+transition-duration: 1s;
+-webkit-transition-duration: 0.5s;
+box-shadow: inset 0 0 15px black;
+}
+.solust {border-top-left-radius:10px;}
+.sagust {border-top-right-radius:10px;}
+#slider-wrapper{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.img-bir,.img-iki,.img-uc,.img-dort,.img-bes
+{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+}
+.img-bir{left: 0px;}
+.img-iki{left: 700px;}
+.img-uc{left: 1400px;}
+ .img-dort{left: 2100px;}
+ .img-bes{left: 2800px;}
+
+ #slider-wrapper > .slider{
+     text-align: center;
+     position: absolute;;
+     left: 0px;
+     width: 2800px;
+     height: 400px;
+     -webkit-animation-name: sliders;
+     -webkit-animation-duration: 15s;
+     -webkit-animation-iteration-count: infinite;
+ }
+
+ #slider-wrapper > .slider:hover{
+     -webkit-animation-play-state: paused;
+ }
+
+ @-webkit-keyframes sliders{
+     0%{left:0px;}
+     10%{left:0px;} 
+     20%{left:700px;}
+     30%{left:-700px;}
+     40%{left:-1400px;}
+     50%{left:-1400px;}
+     60%{left:-2100px;}
+     70%{left:-2100px;}
+     80%{left:-2800px;}
+     90%{left:-2800px;}
+ }
+
+
+.kayıt table td {background-color: darksalmon;}
+.kayıt{
+    position: fixed;
+    left: 50px;
+    top: 200px;
+    width: 500;
+    height: 100;
+    margin-right: auto;
+    display: inline;block-size: auto;
+}
